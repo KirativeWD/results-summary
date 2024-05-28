@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 
 ## Table of contents
 
@@ -11,8 +11,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,10 +25,32 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GH Pages](https://kirativewd.github.io/results-summary/)
+- Solutions List: [KirativeWD - Solutions](https://www.frontendmentor.io/profile/KirativeWD/solutions)
 
 ## My process
+
+I took some creative liberties with how the component rendered on screen depending on the data.json file.
+
+As an example, the following code changes what the rating is depending on the calculated average. This is why the component shows "good" instead of "great."
+
+```js
+let resultRating = "";
+
+if (averageScore >= 90) {
+    resultRating = "Excellent";
+} else if (averageScore >= 80) {
+    resultRating = "Very Good";
+} else if (averageScore >= 70) {
+    resultRating = "Good";
+} else if (averageScore >= 60) {
+    resultRating = "Average";
+} else if (averageScore >= 50) {
+    resultRating = "Below Average";
+} else {
+    resultRating = "Needs Improvement";
+};
+```
 
 ### Built with
 
