@@ -1,20 +1,26 @@
 import React from "react";
+import "./css/Summary.css";
 
 function Summary({ summaryData }) {
 
     return (
-        <section>
-            <h3>Summary</h3>
+        <section className="summary">
+            <h3 className="clr-brand">Summary</h3>
             <ul>
                 {summaryData.map(data => {
                     return (
-                        <li>
-                            <div>
+                        <li style={{ background: data.background }}>
+                            <div className="summary__category">
                                 <img src={data.icon} alt="" />
-                                <h4>{data.category}</h4>
+                                <h4 style={{ color: data.color }}>{data.category}</h4>
                             </div>
                             <div>
-                                <span>{data.score} / 100</span>
+                                <span className="summary__score fw-bold">
+                                    <span className="clr-brand">{data.score} </span>
+                                    <span aria-hidden="true">/ </span>
+                                    <span className="sr-only">out of </span>
+                                    100
+                                </span>
                             </div>
                         </li>
                     )
