@@ -22,6 +22,10 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+![Desktop preview of KirativeWD's results summary component solution](https://github.com/KirativeWD/results-summary/assets/46665152/fa99d06e-81c5-4543-892b-b23f3ad975b7)
+![Mobile preview of KirativeWD's results summary component solution](https://github.com/KirativeWD/results-summary/assets/46665152/f5189036-eecf-494c-b9bf-498cfe21d0b7)
+
+
 
 ### Links
 
