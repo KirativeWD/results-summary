@@ -1,0 +1,35 @@
+.results {
+    background: var(--clr-gradient-light);
+    padding: 1.5rem 8% 2rem;
+    border-radius: 0 0 2rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.results__average-score-container {
+    background: var(--clr-gradient-dark);
+    border-radius: 100vw;
+    max-width: clamp(8em, 23vw + 1rem, 11em);
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    margin: 0 auto 2rem;
+}
+
+.results__average {
+    display: block;
+    font-size: clamp(3rem, 8vw + 1rem, 5rem);
+    color: white;
+    line-height: 1;
+}
+
+.results__rating {
+    font-size: clamp(1.5rem, 3.5vw + 0.25rem, 2rem);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}

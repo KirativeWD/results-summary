@@ -1,4 +1,5 @@
 import React from "react";
+import './css/Result.css';
 
 function Result({ summaryData }) {
 
@@ -27,15 +28,15 @@ function Result({ summaryData }) {
     };
 
     return (
-        <section>
+        <section className="results">
             <h2>Your Result</h2>
-            <div>
+            <div className="results__average-score-container">
                 <span>
-                    <span>{averageScore}</span>
+                    <span className="results__average fw-black">{averageScore}</span>
                     of 100
                 </span>
             </div>
-            <span>{resultRating}</span>
+            <span className="results__rating clr-white fw-bold">{resultRating}</span>
             <p>You scored higher than 65% of the people who have taken these tests.</p>
         </section>
     )
