@@ -34,4 +34,21 @@ button {
     color: white;
     margin-block: 1rem;
     cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    transition: outline 200ms ease-in-out;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 100vw;
+    background: var(--clr-gradient-light);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
 }

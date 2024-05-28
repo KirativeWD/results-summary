@@ -101,4 +101,13 @@ body {
     .results {
         border-radius: 2rem;
     }
+
+    button:is(:hover, :focus-visible)::before {
+        opacity: 1;
+    }
+
+    button:focus-visible {
+        outline: var(--clr-brand-dark) solid 3px;
+        outline-offset: 2px;
+    }
 }
